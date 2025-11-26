@@ -7,7 +7,9 @@ project_id = "your-gcp-project-id"
 # region      = "asia-south1"
 # zone        = "asia-south1-a"
 # vm_name     = "nifty50-rag-dev"
-# machine_type = "e2-standard-4"
+# machine_type = "e2-standard-2"
 # disk_size   = 50
 # ssh_user    = "dev"
+
+
 

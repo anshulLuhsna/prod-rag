@@ -51,7 +51,7 @@ variable "vm_name" {
 variable "machine_type" {
   description = "Machine type for the VM"
   type        = string
-  default     = "e2-standard-4"  # 4 vCPU, 16 GB RAM - good for MVP
+  default     = "e2-standard-2"  # 2 vCPU, 8 GB RAM - good for MVP
 }
 
 variable "disk_size" {
@@ -214,4 +214,6 @@ output "ssh_config_entry" {
         StrictHostKeyChecking no
   EOT
 }
+
+
 

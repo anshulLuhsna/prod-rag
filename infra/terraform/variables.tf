@@ -27,7 +27,7 @@ variable "vm_name" {
 variable "machine_type" {
   description = "Machine type for the VM"
   type        = string
-  default     = "e2-standard-4"  # 4 vCPU, 16 GB RAM
+  default     = "e2-standard-2"  # 2 vCPU, 8 GB RAM
   
   # Other options:
   # e2-standard-2  (2 vCPU, 8 GB)  - $50/month
@@ -56,4 +56,6 @@ variable "ssh_user" {
   type        = string
   default     = "dev"
 }
+
+
 

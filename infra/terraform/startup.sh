@@ -122,3 +122,5 @@ echo ""
 echo "⚠️  IMPORTANT: After first login, run: newgrp docker"
 echo "   Or log out and log back in for Docker permissions"
 
+
+
