@@ -1,0 +1,13 @@
+# Copy this file to terraform.tfvars and fill in your values
+# terraform.tfvars is gitignored and contains sensitive values
+
+project_id = "your-gcp-project-id"
+
+# Optional: Override defaults
+# region      = "asia-south1"
+# zone        = "asia-south1-a"
+# vm_name     = "nifty50-rag-dev"
+# machine_type = "e2-standard-4"
+# disk_size   = 50
+# ssh_user    = "dev"
+
