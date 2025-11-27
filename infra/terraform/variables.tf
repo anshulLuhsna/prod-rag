@@ -57,5 +57,17 @@ variable "ssh_user" {
   default     = "dev"
 }
 
+variable "use_existing_ssh_key" {
+  description = "If true, use existing SSH key from ~/.ssh/id_rsa.pub (or Windows: C:\\Users\\<user>\\.ssh\\id_rsa.pub). If false, generate new key."
+  type        = bool
+  default     = false
+}
+
+variable "existing_ssh_public_key_path" {
+  description = "Path to existing SSH public key (only used if use_existing_ssh_key = true). Leave empty to auto-detect."
+  type        = string
+  default     = ""
+}
+
 
 

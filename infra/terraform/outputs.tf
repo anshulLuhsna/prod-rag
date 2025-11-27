@@ -20,21 +20,31 @@ output "vm_zone" {
   value       = google_compute_instance.dev_vm.zone
 }
 
+output "ssh_key_path" {
+  description = "Path to SSH private key"
+  value       = local.ssh_private_key_path
+}
+
 output "ssh_command" {
   description = "SSH command to connect to the VM"
-  value       = "ssh -i ${path.module}/../.ssh/nifty50_rag_key ${var.ssh_user}@${google_compute_address.static_ip.address}"
+  value       = "ssh -i \"${local.ssh_private_key_path}\" ${var.ssh_user}@${google_compute_address.static_ip.address}"
 }
 
 output "ssh_config_entry" {
-  description = "Add this to your ~/.ssh/config file for easier access"
+  description = "SSH config entry to add to ~/.ssh/config (or C:\\Users\\<user>\\.ssh\\config on Windows). Note: On Windows, change UserKnownHostsFile to NUL"
   value = <<-EOT
 Host nifty50-rag-dev
     HostName ${google_compute_address.static_ip.address}
     User ${var.ssh_user}
-    IdentityFile ${path.module}/../.ssh/nifty50_rag_key
+    IdentityFile ${replace(local.ssh_private_key_path, "\\", "/")}
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
   EOT
+}
+
+output "using_existing_key" {
+  description = "Whether using existing SSH key or generated new one"
+  value       = local.should_use_existing
 }
 
 output "project_setup_commands" {

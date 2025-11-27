@@ -11,5 +11,17 @@ project_id = "your-gcp-project-id"
 # disk_size   = 50
 # ssh_user    = "dev"
 
+# SSH Key Configuration
+# Option 1: Use existing SSH key (recommended if you already have one)
+# use_existing_ssh_key = true
+# Windows paths - use double backslashes OR forward slashes (both work):
+# existing_ssh_public_key_path = "C:\\Users\\YourUsername\\.ssh\\id_rsa.pub"  # Double backslashes
+# existing_ssh_public_key_path = "C:/Users/YourUsername/.ssh/id_rsa.pub"     # Forward slashes (simpler!)
+# Linux/Mac:
+# existing_ssh_public_key_path = "~/.ssh/id_rsa.pub"
+# Or leave existing_ssh_public_key_path empty to auto-detect
 
+# Option 2: Generate new SSH key (default)
+# use_existing_ssh_key = false
+# Terraform will create ../.ssh/nifty50_rag_key automatically
 
