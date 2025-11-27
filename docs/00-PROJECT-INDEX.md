@@ -22,20 +22,29 @@ An enterprise-grade, production-ready Agentic Retrieval-Augmented Generation (RA
 
 ## Documentation Structure
 
+### 🚀 MVP Documents (START HERE)
+
+| Document | Description | Priority |
+|----------|-------------|----------|
+| [**MVP Plan**](./MVP-PLAN.md) | Scope, timeline, success criteria for 5-company MVP | ⭐⭐⭐ |
+| [**MVP Implementation Guide**](./MVP-IMPLEMENTATION-GUIDE.md) | Complete technical implementation guide with code | ⭐⭐⭐ |
+| [**Document Requirements**](./DOCUMENT-REQUIREMENTS.md) | Exact list of 55 PDFs to download manually | ⭐⭐⭐ |
+| [MVP Companies](./ref/MVP-COMPANIES.md) | Quick reference for 5 banking companies | ⭐⭐ |
+
 ### Core Planning Documents
 
 | # | Document | Description | Status |
 |---|----------|-------------|--------|
-| 01 | [Architecture Overview](./01-ARCHITECTURE.md) | System design, components, data flow | Pending |
-| 02 | [Data Model](./02-DATA-MODEL.md) | Database schemas, vector collections, relationships | Pending |
-| 03 | [Ingestion Pipeline](./03-INGESTION-PIPELINE.md) | Document collection, parsing, chunking, embedding | Pending |
-| 04 | [Retrieval System](./04-RETRIEVAL-SYSTEM.md) | Hybrid search, reranking, query enhancement | Pending |
-| 05 | [Agentic Workflow](./05-AGENTIC-WORKFLOW.md) | LangGraph nodes, state, edges, HITL | Pending |
-| 06 | [API Specification](./06-API-SPECIFICATION.md) | REST endpoints, authentication, schemas | Pending |
-| 07 | [Frontend Specification](./07-FRONTEND-SPEC.md) | Pages, components, UX flows | Pending |
-| 08 | [Infrastructure](./08-INFRASTRUCTURE.md) | GCP setup, Docker, CI/CD | Pending |
-| 09 | [Evaluation & Monitoring](./09-EVALUATION.md) | RAGAS metrics, LangSmith, observability | Pending |
-| 10 | [Implementation Roadmap](./10-IMPLEMENTATION-ROADMAP.md) | Phases, milestones, dependencies | Pending |
+| 01 | [Architecture Overview](./01-ARCHITECTURE.md) | System design, components, data flow | ✅ |
+| 02 | [Data Model](./02-DATA-MODEL.md) | Database schemas, vector collections, relationships | ✅ |
+| 03 | [Ingestion Pipeline](./03-INGESTION-PIPELINE.md) | Document collection, parsing, chunking, embedding | ✅ |
+| 04 | [Retrieval System](./04-RETRIEVAL-SYSTEM.md) | Hybrid search, reranking, query enhancement | ✅ |
+| 05 | [Agentic Workflow](./05-AGENTIC-WORKFLOW.md) | LangGraph nodes, state, edges, HITL | ✅ |
+| 06 | [API Specification](./06-API-SPECIFICATION.md) | REST endpoints, authentication, schemas | ✅ |
+| 07 | [Frontend Specification](./07-FRONTEND-SPEC.md) | Pages, components, UX flows | ✅ |
+| 08 | [Infrastructure](./08-INFRASTRUCTURE.md) | GCP setup, Docker, CI/CD | ✅ |
+| 09 | [Evaluation & Monitoring](./09-EVALUATION.md) | RAGAS metrics, LangSmith, observability | ✅ |
+| 10 | [Implementation Roadmap](./10-IMPLEMENTATION-ROADMAP.md) | Phases, milestones, dependencies | ✅ |
 
 ### Reference Documents
 
